@@ -2974,7 +2974,7 @@ DisableNamecall.MouseButton1Down:Connect(function()
 	end
 end)
 
-make_writeable(game_meta)
+make_writeable(game_meta, false)
 
 game_meta.__namecall = function(...)
 	if (DisableR2S.BorderColor3 == Color3.fromRGB(255, 60, 60)) then return __namecall(...) end
